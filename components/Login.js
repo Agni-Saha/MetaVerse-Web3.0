@@ -3,8 +3,8 @@ import Image from "next/image"
 import { useEffect, useState } from "react"
 import { useMoralis } from 'react-moralis'
 
-import loginBg from "../data/login1.jpg"
-import logo from "../data/new-2.png"
+import loginBg from "../data/login1.webp"
+import logo from "../data/new-2.webp"
 import styles from "../styles/Login.module.css"
 import Loader from "./Loader"
 
@@ -14,14 +14,7 @@ export default function Login() {
     const id = null
 
     useEffect(() => {
-        id = setTimeout(() => {
-            setLoading(false)
-        }, 4500)
-
-        return () => {
-            clearTimeout(id)
-        }
-
+        setLoading(false)
     }, [])
 
     return loading ? <Loader /> : (

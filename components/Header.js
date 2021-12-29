@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { useMoralis } from "react-moralis"
 
-import Img from "../data/new-2.png"
+import Img from "../data/new-2.webp"
 import Avatar from "./Avatar"
 import ChangeUsername from "./ChangeUsername"
 
