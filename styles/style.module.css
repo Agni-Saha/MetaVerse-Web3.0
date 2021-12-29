@@ -1,0 +1,32 @@
+.parent_div {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, #000000, #15090f, #1f111c, #271729, #2b1e3a, #302243, #35254d, #3a2957, #4a2758, #592457, #682053, #751c4d);
+}
+
+.parent_div {
+    overflow-x: hidden;
+}
+
+.parent_div::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.parent_div::-webkit-scrollbar-track {
+    background: none;
+}
+
+.parent_div::-webkit-scrollbar-thumb {
+    background: crimson;
+    border-radius: 5rem;
+}
+
+.send_button {
+	font-family: 'Julius Sans One';
+    text-transform: lowercase;
+    letter-spacing: 4px;
+}
+
+.send_button:hover {
+    color: #ec4c4c;
+}
