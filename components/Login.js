@@ -11,10 +11,16 @@ import Loader from "./Loader"
 export default function Login() {
     const [loading, setLoading] = useState(true)
     const { authenticate } = useMoralis()
-    const id = null
 
     useEffect(() => {
-        setLoading(false)
+        const id = setTimeout(() => {
+            setLoading(false)
+        }, 2300)
+
+        return () => {
+            clearTimeout(id)
+        }
+
     }, [])
 
     return loading ? <Loader /> : (
